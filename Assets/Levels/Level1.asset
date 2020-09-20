@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624b749007919524fb33f6b4e7a05ddc, type: 3}
   m_Name: Level1
   m_EditorClassIdentifier: 
-  numberOfBoysNear: 1
+  numberOfKidsNear: 2
   numberOfEnemies: 10
-  enemiesSpeed: 10
+  enemiesMinSpeed: 1
+  enemiesMaxSpeed: 3
+  arcadeMachine: {fileID: 0}
+  kid1: {fileID: 0}
+  kid2: {fileID: 0}

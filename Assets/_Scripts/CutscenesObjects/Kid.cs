@@ -12,12 +12,14 @@ public class Kid : MonoBehaviour
     public void Speak()
     {
         spriteRenderer.sprite = speakingSprite;
-        speakingCloudGameObject.SetActive(true);
+        if (speakingCloudGameObject != null)
+            speakingCloudGameObject.SetActive(true);
     }
 
     public void StopSpeaking()
     {
         spriteRenderer.sprite = playingSprite;
-        speakingCloudGameObject.SetActive(false);
+        if (speakingCloudGameObject != null)
+            speakingCloudGameObject.SetActive(false);
     }
 }
